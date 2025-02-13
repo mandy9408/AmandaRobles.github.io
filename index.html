@@ -1,20 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portfolio</title>
-  <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-  <h1>Bienvenido a mi portfolio</h1>
-  <h2>Hola</h2>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mi</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <h3>Proyectos realizados</h3>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>Proyecto 1</td>
+        <td>Descripción del proyecto 1</td>
+        <td><a href="#">Ver proyecto</a></td>
+      </tr>
+      <tr>
+        <td>Proyecto 2</td>
+        <td>Descripción del proyecto 2</td>
+        <td><a href="#">Ver proyecto</a></td>
+      </tr>
+      <tr>
+        <td>Proyecto 3</td>
+        <td>Descripción del proyecto 3</td>
+        <td><a href="#">Ver proyecto</a></td>
+      </tr>
+    </table>
+
+    <footer>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
 
 <style>
-    body{
-    background-color: darkslategray;
-    }
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+  }
+  .menu ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  body {
+    margin: auto;
+    background-color: rgb(49, 37, 37);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: black;
+    color: white;
+  }
+  footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+i{
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
 </style>
